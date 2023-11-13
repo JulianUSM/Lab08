@@ -6,14 +6,14 @@ package Lab8;
  * @author Julian Edwards and
  *
  */
-public class insertTTF extends TwoThreeFourTree
+public class insertTTF<E extends Comparable<E>> extends TwoThreeFourTree<E>
 {
     /**
      * @param data
      */
     @Override
-    public void insert(Comparable data) {
-        
+    public void insert(final E data) {
+
     }
 
     /**
@@ -21,7 +21,7 @@ public class insertTTF extends TwoThreeFourTree
      * @return
      */
     @Override
-    public boolean contains(Comparable data) {
+    public boolean contains(final E data) {
         return false;
     }
 
@@ -29,7 +29,7 @@ public class insertTTF extends TwoThreeFourTree
      * @return
      */
     @Override
-    public Comparable[] getSorted() {
-        return new Comparable[0];
+    public E[] getSorted() {
+        
     }
 }
